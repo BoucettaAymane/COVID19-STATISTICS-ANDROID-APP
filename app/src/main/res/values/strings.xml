@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Covid 19 Analytics</string>
+
+    <string name="txt_advices">Preventing the spread of COVID-19</string>
+
+    <string name="advice_1">Place the mask on your face with the blue side facing out and the stiff</string>
+    <string name="advice_2">Wash your hands often.Use soap \n and water</string>
+    <string name="advice_3">Stay away from anyone who coughs \n or sneezes</string>
+    <string name="advice_4">Stay at home if you \n don t feel well </string>
+    <string name="advice_5">See a doctor if you have a fever,cough, \n and have trouble breathing</string>
+
+</resources>

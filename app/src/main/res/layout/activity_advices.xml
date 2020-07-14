@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:airbnb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".AdvicesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dip"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/covid19logo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/worksans_semibold"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/DarkBlue"
+            android:textSize="@dimen/txt_size_max" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/covid19logo" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/txt_advices"
+                android:paddingStart="15dp"
+                android:textSize="@dimen/txt_size_mini"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="15dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#F6F6F6"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                airbnb:lottie_fileName="wear-mask.json"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/advice_1"
+                android:paddingStart="15dp"
+                android:textSize="@dimen/txt_size_mini"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="15dp"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                airbnb:lottie_fileName="wash-your-hands-regularly.json"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/advice_2"
+                android:paddingStart="15dp"
+                android:textSize="@dimen/txt_size_mini"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="15dp"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                airbnb:lottie_fileName="social-distancing.json"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/advice_3"
+                android:paddingStart="15dp"
+                android:textSize="@dimen/txt_size_mini"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="15dp"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                airbnb:lottie_fileName="corona-attacking-in-home.json"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/advice_4"
+                android:paddingStart="15dp"
+                android:textSize="@dimen/txt_size_mini"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="15dp"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                airbnb:lottie_fileName="prueba-doctores-freepik.json"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/advice_5"
+                android:paddingStart="15dp"
+                android:textSize="@dimen/txt_size_mini"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingEnd="15dp"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/getStarted"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/DarkBlue">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Get Started"
+                        android:layout_centerInParent="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/txt_size_max"
+                        android:fontFamily="@font/worksans_semibold"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dip"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/covid19logo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/worksans_semibold"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/DarkBlue"
+            android:textSize="@dimen/txt_size_max" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/covid19logo" />
+
+    </LinearLayout>
+
+</LinearLayout>
